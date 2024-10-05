@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/peerjs/dist/peerjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>P2P Chat Application</h1>
+        <div id="chatArea">
+            <div id="messages"></div>
+        </div>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button id="sendMessage">Send</button>
+
+        <h3>Connection ID</h3>
+        <input type="text" id="peerId" placeholder="Enter Peer ID to connect...">
+        <button id="connectPeer">Connect</button>
+
+        <h3>My Peer ID</h3>
+        <p id="myPeerId">Generating...</p>
+
+        <!-- Link to the instructions page -->
+        <p><a href="instructions.html" style="text-decoration: none; color: #3366cc;">How to use this application</a></p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
